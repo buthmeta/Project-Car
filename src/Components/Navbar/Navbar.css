@@ -1,0 +1,373 @@
+.navbar_side {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 100px;
+  /* background: linear-gradient(to right, #7d3c98, #e67e22); */
+  background: #2471a3;
+}
+
+.nav_text h1 {
+  font-size: 15px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.nav_icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 17px;
+  transform: 0.3s;
+}
+
+.nav_icon .navbar_icon:hover {
+  color: var(--main-color);
+}
+
+.navbar_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 100px;
+  position: fixed;
+  z-index: 100;
+  background: #fff;
+  box-shadow: 0 0 5px #000;
+}
+
+.navbar_container h1 {
+  font-size: 23px;
+  font-weight: 600;
+  background: linear-gradient(
+    to right,
+    #3498db,
+    #7d3c98
+  ); /* Gradient direction and colors */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* For cross-browser support */
+  background-clip: text;
+  color: transparent;
+}
+
+.nav_body {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav_flex_bottom {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav_flex_img img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #e74c3c;
+}
+
+.nav_body a {
+  font-size: 17px;
+  background: linear-gradient(
+    to right,
+    #5dade2,
+    #2ecc71
+  ); /* Gradient direction and colors */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* For cross-browser support */
+  background-clip: text;
+  color: transparent;
+  position: relative;
+  transition: 0.3s;
+}
+
+.home_flex {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+  color: #27ae60;
+}
+
+.home_flex .home {
+  font-size: 22px;
+}
+
+.nav_body a::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  bottom: 0;
+  border-bottom: 2px solid #27ae60;
+  transition: 0.3s all linear;
+  left: 0;
+}
+
+.nav_body a:hover::after {
+  width: 100%;
+}
+
+.word_group {
+  font-size: 20px;
+  color: #e74c3c;
+  cursor: pointer;
+  position: relative;
+}
+
+.word_group:hover .flag_logo_container {
+  visibility: visible;
+  display: block;
+  transform: translateY(-10px);
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flag_logo_container {
+  position: absolute;
+  visibility: hidden;
+  display: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  row-gap: 15px;
+  border-radius: 10px;
+  background: white;
+  width: 150px;
+  height: 100px;
+  box-shadow: 0 0 5px #000;
+}
+
+.flag_box img {
+  width: 25px;
+  height: 25px;
+  object-position: center;
+  border: 2px solid #27ae60;
+  border-radius: 50%;
+}
+
+.flag_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+}
+
+.flag_box h2 {
+  font-size: 15px;
+  color: #000;
+  font-weight: 500;
+}
+
+.personal_card {
+  visibility: hidden;
+  display: none;
+  position: absolute;
+  width: 350px;
+  height: 200px;
+  right: 30px;
+  padding: 10px 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #000;
+  margin-top: 8px;
+}
+
+.card_self h2 {
+  text-align: center;
+  padding: 2px 0;
+  font-size: 15px;
+  font-weight: 500;
+  color: #000;
+}
+
+.head_personal h1 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.line_personal {
+  border-bottom: 1px solid #2ecc71;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.card_self span {
+  background: linear-gradient(to right, red, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.card_bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  visibility: hidden;
+  display: none;
+  width: 350px;
+  top: 260px;
+  right: 30px;
+  padding: 10px 40px;
+  background: #e74c3c;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 0 5px #000;
+  margin-top: 8px;
+}
+
+.card_ul li {
+  color: #fff;
+  font-weight: 300;
+}
+
+.card_Text h1 {
+  font-size: 15px;
+}
+
+.nav_flex_img:hover .personal_card {
+  visibility: visible;
+  display: block;
+}
+
+.nav_flex_img:hover .card_bottom {
+  visibility: visible;
+  display: block;
+  display: flex;
+  align-items: center;
+}
+
+.home_page {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+}
+
+.home_img img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  border: 3px solid #27ae60;
+}
+
+.home_text_page h1 {
+  font-size: 20px;
+  background: linear-gradient(to top, #8200e0, #00719b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-weight: 600;
+}
+
+.home_text_page h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.home_text_page p {
+  max-width: 450px;
+  color: #000;
+  padding-top: 5px;
+}
+
+.icon_person {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.icon_person .bx {
+  border: 2px solid #8200e0;
+  font-size: 22px;
+  padding: 10px;
+  border-radius: 50px;
+  color: #00719b;
+}
+
+.icon_person .bx:hover {
+  transform: translateY(-10px);
+  transition: 0.3s;
+  background: #00719b;
+  border: 2px solid #00719b;
+  color: #fff;
+}
+
+.btn_head {
+  display: flex;
+  margin-top: 20px;
+  gap: 15px;
+}
+
+.btn {
+  padding: 0.8rem 1.8rem;
+  border: none;
+  outline: none;
+  background: #2471a3;
+  cursor: pointer;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.btn_head .read {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+
+.arrow {
+  font-size: 25px;
+}
+
+.btn_head .btn:hover {
+  background: #1f6391;
+}
+
+.btn_head .btn:hover .arrow {
+  transform: translateX(10px);
+  transition: 0.3s;
+}
+
+.shadow_img {
+  position: absolute;
+  width: 220px;
+  height: 5px;
+  background: #5c5c5c;
+  border-radius: 50%;
+  left: 30px;
+  bottom: -15px;
+}
+
+.home_img {
+  position: relative;
+}
+
+.navbar_container.scroll_bar {
+  position: fixed;
+  top: 0;
+  transition: 0.5s ease-in-out;
+}
